@@ -5,30 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS e JS Prof: Jemerson</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>HTML5, CSS3, JS</h1>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">HTML5, CSS3, JS</h1>
+            <p class="lead">Utilizando Bootstrap 4.</p>
+        </div>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav align-content-stretch">
+                <a class="nav-link active" href="index.html">Inicial</a>
+                <a class="nav-link" href="formnoticias.html">Formulário</a>
+                <a class="nav-link" href="trabalhofinal.html">Trabalho</a>
+            </div>
+        </div>
+    </nav>
     <main>
-        <nav>
-            <h1>Bem Vindo as atividades da aula de html, css e js</h1>
+        <div class="container-fluid">
+            <div id="dropzone" class="row" style="padding: 10px;" ondrop="drop(event)" ondragover="allowDrop(event)"
+                ondragleave="leave(event)">
+                <div id="news1" class="col-lg-4" draggable="true" ondragstart="drag(event)"
+                    ondragover="denyDrop(event)">
 
-            <br>
+                    <article>
+                        <h3>Ação da Mosaico (MOSI3) desaba 11,67% após números fracos do 4º trimestre</h3>
+                        <h6>
+                            <small class="font-weight-bolder">26/03/2021</small>
+                            <small class="float-right">sergioschu@gmail.com.br</small>
+                        </h6>
+                        <img src="https://www.infomoney.com.br/wp-content/uploads/2021/03/Mosaico-B3-@cauediniz-0378.jpg?fit=1280%2C1024&quality=70&strip=all"
+                            class="img-fluid">
+                        <p>
+                            XP Investimentos e Itaú BBA seguem com recomendação de compra para ações da companhia,
+                            destacando importantes iniciativas para 2021
+                        </p>
+                        <a class="btn btn-warning btn-sm float-right"
+                            href="https://www.infomoney.com.br/mercados/mosaico-mosi3-tem-primeiro-resultado-pos-ipo-fraco-e-acao-cai-8-mas-analistas-estao-otimistas-com-iniciativas-para-2021/">...Leia
+                            Mais</a>
+                    </article>
+                </div>
+                <div id="news2" class="col-lg-4" draggable="true" ondragstart="drag(event)"
+                    ondragover="denyDrop(event)">
 
-            <a href="viewnoticias.html">Atividade 1 Notícias</a>
 
-            <br>
+                    <article>
+                        <h3>Em carta de renúncia, presidente do conselho do BB cita descaso e desrespeito</h3>
+                        <h6>
+                            <small class="font-weight-bolder">02/04/2021</small>
+                            <small class="float-right">sergioschu@gmail.com.br</small>
+                        </h6>
+                        <img src="https://www.infomoney.com.br/wp-content/uploads/2019/09/banco-do-brasil.jpg?w=768&quality=70&strip=all"
+                            class="img-fluid">
+                        <p>
+                            Movimentação começou após renúncia de André Brandão da presidência, atribuída ao aumento da
+                            interferência do governo Jair Bolsonaro nas estatais
+                        </p>
+                        <a class="btn btn-warning btn-sm float-right"
+                            href="https://www.infomoney.com.br/mercados/em-carta-de-renuncia-presidente-do-conselho-do-bb-cita-descaso-e-desrespeito/">...Leia
+                            Mais</a>
+                    </article>
+                </div>
+                <div id="news3" class="col-lg-4" draggable="true" ondragstart="drag(event)"
+                    ondragover="denyDrop(event)">
 
-            <a href="formnoticias.html">Atividade 2 Cadastro de Notícias</a>
+                    <article>
+                        <h3>Butanvac e Versamune: como as novas vacinas mudam o cenário da Covid-19 no Brasil?</h3>
+                        <h6>
+                            <small class="font-weight-bolder">18/12/2005</small>
+                            <small class="float-right">sergioschu@gmail.com.br</small>
+                        </h6>
 
-        </nav>
+                        <img src="https://www.infomoney.com.br/wp-content/uploads/2021/03/51073426561_aa0c4006d5_c.jpg?w=768&quality=70&strip=all"
+                            class="img-fluid">
+                        <p>
+                            O anúncio sobre as vacinas surpreendeu os brasileiros, e gerou expectativas sobre uma aceleração
+                            da vacinação no país
+                        </p>
+                        <a class="btn btn-warning btn-sm float-right"
+                            href="https://www.infomoney.com.br/economia/butanvac-e-versamune-como-as-novas-vacinas-mudam-o-cenario-da-covid-19-no-brasil/">...Leia
+                            Mais</a>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
     </main>
-
     <footer>
-        <b>Sergio Jonas Schulz - Desenvolvimento de Aplicações Web e Mobile</b>
+        <div class="container">
+            <b>Sergio Jonas Schulz - Desenvolvimento de Aplicações Web e Mobile</b>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.style.border = "3px dotted #ccc";
+            ev.currentTarget.style.background = "#eee";
+        }
+
+        function denyDrop(ev) {
+            ev.stopPropagation();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function leave(ev) {
+            ev.preventDefault();
+            ev.target.style.border = "none";
+            ev.target.style.background = "inherit";
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            ev.target.style.border = "none";
+            ev.target.style.background = "inherit";
+        }
+    </script>
 </body>
 
 </html>
